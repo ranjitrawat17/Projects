@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            overflow: scroll;
+        }
+
+        ul {
+            width: 50%;
+            list-style: none;
+        }
+
+        ul>li {
+            margin-bottom: 10px;
+        }
+
+        .accordion>li {
+            border: .1rem solid grey;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .accordion-content {
+            max-height: 0px;
+            overflow: hidden;
+        }
+
+        input[type="radio"]:checked+label+.accordion-content {
+            max-height: min-content;
+            padding: 0.3rem;
+            font-family: 'Golos Text', sans-serif;
+        }
+
+        input[type="radio"]:checked+label::before {
+            content: '-';
+        }
+
+        input[type="radio"] {
+            width: 0;
+            height: 0;
+        }
+
+        label {
+            font-family: 'Golos Text', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        label::before {
+            content: '+';
+            margin-right: 10px;
+        }
+
+        @media all and (max-width:650px) {
+            ul {
+                width: 90%;
+                list-style: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first" checked>
+                <label for="first">Accordion header #1</label>
+                <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, autem
+                    consequatur! Itaque esse, facere soluta vitae error nam placeat cumque vero hic magnam deleniti
+                    incidunt voluptas repudiandae corrupti natus fugit minima. Voluptate eligendi porro aliquid
+                    provident animi sit ipsam cumque!</div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">Accordion header #2</label>
+                <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                    voluptatum officiis asperiores obcaecati minus nihil veniam odio impedit. Quos, voluptatibus?</div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Accordion header #3</label>
+                <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim soluta
+                    impedit quod. Qui nam harum dignissimos quam a temporibus optio dolore molestias tempora eum quo
+                    facilis sapiente, iure commodi, nemo similique blanditiis? At accusamus provident, omnis velit magni
+                    placeat vel hic numquam ad quam quo cumque eum cum quas rerum veritatis, et corrupti voluptatibus!
+                    Blanditiis dolor cupiditate quia aperiam nulla.</div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="forth">
+                <label for="forth">Accordion header #4</label>
+                <div class="accordion-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla
+                    neque dolore saepe sit placeat laboriosam, praesentium officiis, cumque eaque dolores eos numquam
+                    cum ratione aut eius? Quas sint in animi enim quis nisi voluptates quisquam facilis hic eos soluta
+                    blanditiis ducimus quidem odio sapiente consequuntur voluptas sunt eaque, nostrum iusto voluptatum
+                    autem explicabo totam aspernatur. Recusandae, amet provident! Sequi doloribus excepturi ipsum velit
+                    dolorem ab rem minus quasi autem consectetur debitis, distinctio architecto, obcaecati adipisci
+                    veritatis quaerat nobis laborum, ipsam atque dignissimos perspiciatis suscipit. Omnis aspernatur
+                    veritatis velit quibusdam illum et doloribus facilis non vero autem officiis eaque reiciendis fugiat
+                    explicabo ipsum, totam est minima harum? Nulla at neque dolorem illum eum adipisci optio soluta
+                    architecto perspiciatis itaque reiciendis id similique assumenda iusto accusamus maiores quia
+                    obcaecati atque quibusdam blanditiis ut laboriosam, dicta temporibus repellendus! Sed illum dolor
+                    obcaecati quasi harum explicabo mollitia delectus consequatur excepturi labore enim aperiam unde
+                    autem repellat magnam ipsum, totam maxime optio odio laboriosam, impedit, temporibus alias. Adipisci
+                    ea ab praesentium quasi, voluptatum repellat eveniet commodi, corporis distinctio perspiciatis eum
+                    sunt iste ratione sequi inventore voluptatibus tenetur nam omnis dicta reprehenderit consectetur
+                    enim odio. Libero vero magni voluptates exercitationem reiciendis, numquam aspernatur excepturi
+                    corporis temporibus eveniet veritatis unde facere amet laborum consequuntur qui, nisi rem
+                    consectetur sapiente sed quo repellendus expedita molestias perferendis. Distinctio ipsa magnam ea,
+                    sequi placeat obcaecati voluptatum tempore dolorem beatae nobis vitae incidunt quaerat, veniam quod
+                    illum a nemo ratione sapiente consequuntur blanditiis porro. Tenetur pariatur totam fuga quibusdam,
+                    id et at velit, beatae porro obcaecati placeat labore, accusamus unde voluptates. Quod, recusandae
+                    nobis hic vero eius blanditiis veniam asperiores expedita impedit amet. Eligendi non, aliquid quia
+                    incidunt provident natus id corporis vel officia nam ad excepturi sit molestiae eum a, sed qui
+                    commodi porro ipsam facere. Consectetur, et dicta!</div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">Accordion header #5</label>
+                <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, unde.
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="sixth">
+                <label for="sixth">Accordion header #6</label>
+                <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officia
+                    soluta facilis, ex qui, laudantium quo earum sapiente rem voluptatibus, magni corrupti quia amet
+                    ratione similique ducimus natus. Placeat labore cumque deleniti architecto illo est beatae alias
+                    mollitia magnam. Esse, nostrum reprehenderit! Dolore hic facilis eaque odio maxime adipisci, natus
+                    reprehenderit eum nam, id culpa, laborum rerum. Quos architecto temporibus beatae, impedit ipsam
+                    mollitia fugiat et perferendis neque sapiente dolores! Eius excepturi maxime dolorem, sed illum
+                    voluptate blanditiis, hic dolorum, aut consequatur nisi quae numquam voluptates quaerat
+                    necessitatibus illo voluptatum!</div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="seven">
+                <label for="seven">Accordion header #7</label>
+                <div class="accordion-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa delectus
+                    beatae velit aut. Et delectus aut quis quidem veniam itaque neque consectetur quasi, sit illo cum
+                    explicabo ipsa aliquid qui?</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
