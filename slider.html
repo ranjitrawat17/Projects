@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #box1 {
+            background-color: #3FC5F0;
+        }
+
+        #box2 {
+            background-color: #EEF5B2;
+        }
+
+        #box3 {
+            background-color: #B08BBB;
+        }
+
+        #box4 {
+            background-color: #5F8D4E;
+        }
+
+        #box5 {
+            background-color: #A9AF7E;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            align-items: start;
+            background-color: #1a2b3c;
+        }
+
+        #slide1 {
+            background-color: #D65F00;
+        }
+
+        #slide2 {
+            background-color: #4E6C50;
+        }
+
+        #slide3 {
+            background-color: #9F71DB;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100%;
+            border: .1rem solid red;
+            overflow: hidden;
+        }
+
+        .slides {
+            width: 300%;
+            height: 100%;
+            background-color: #F0EBCE;
+            animation: sliding 10s infinite;
+            display: flex;
+        }
+
+        @keyframes sliding {
+            40% {
+                transform: translate(-33.33%);
+            }
+
+            80% {
+                transform: translate(-66.66%);
+            }
+
+            100% {
+                transform: translate(0%)
+            }
+        }
+
+        .slide {
+            width: 33.33%;
+            height: 100%;
+            flex: 1 0 33.33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slides">
+                <div id="slide1" class="slide"></div>
+                <div id="slide2" class="slide"></div>
+                <div id="slide3" class="slide"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
