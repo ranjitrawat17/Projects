@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e2bbc132.css",
+    "main.js": "/static/js/main.a2ce49fc.js",
+    "static/media/001-night-mode.png": "/static/media/001-night-mode.69b1d1329c4e6ab9bcb9.png",
+    "static/media/more.png": "/static/media/more.62192cea97dc64b238f0.png",
+    "index.html": "/index.html",
+    "main.e2bbc132.css.map": "/static/css/main.e2bbc132.css.map",
+    "main.a2ce49fc.js.map": "/static/js/main.a2ce49fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2bbc132.css",
+    "static/js/main.a2ce49fc.js"
+  ]
+}
